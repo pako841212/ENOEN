@@ -17,8 +17,8 @@ for (anio in anios) {
 
       expr = {                      # Specifying expression
         # Guarda en un csv el cuarto elemento (SDEM), que es el que nos interesa
-        datos[[4]] |>
-          write.csv(paste0("./resultados/SDEM", trim, anio),
+        datos[4] |>
+          write.csv(paste0("./resultados/SDEM", anio, trim),
                           row.names = FALSE)
       },
 
